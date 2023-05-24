@@ -98,7 +98,7 @@ def main():
             running.remove(p)
         time.sleep(1)
 
-    print "Winding down"
+    print("Winding down")
 
     # Wind down phase
     for run in running:
@@ -109,7 +109,7 @@ def run_sim(deq_cost, host, cores, config_json, queue_policy,
             iterations, seeds):
     # Create config file
     conf, config_file = tempfile.mkstemp()
-    os.write(conf, json.dumps(config_json))
+    os.write(conf, json.dumps(config_json).encode())
     os.close(conf)
 
     # Run the simulation

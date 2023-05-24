@@ -1,9 +1,9 @@
 import sys
 import logging
-from queue.request_queue import *
+from sim_queue.request_queue import *
 from scheduler.scheduler import *
 from scheduler.load_balancer import LoadBalancer
-from queue.dequeue_policy import *
+from sim_queue.dequeue_policy import *
 
 
 class CoreGroup(object):

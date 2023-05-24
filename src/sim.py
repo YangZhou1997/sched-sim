@@ -12,8 +12,8 @@ import argparse
 from util.histogram import Histogram
 
 from host.host import *
-from request.request_generator import *
-from request.interarrival_generator import *
+from sim_request.request_generator import *
+from sim_request.interarrival_generator import *
 
 
 gen_dict = {
@@ -45,7 +45,7 @@ def main():
 
     parser.add_argument('-v', '--verbose', dest='verbose',
                       action='count', help='Increase verbosity (specify'
-                      ' multiple times for more)')
+                      ' multiple times for more)', default=1)
     parser.add_argument('-g', '--print-hist', action='store_true', dest='hist',
                       help='Print request latency histogram', default=False)
     parser.add_argument('-c', '--cores', dest='cores', action='store',

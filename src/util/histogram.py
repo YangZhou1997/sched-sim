@@ -51,7 +51,7 @@ class Histogram(object):
                 'dropped_requests': self.dropped[i]
             }
             info.append(new_value)
-        print json.dumps(info)
+        print(json.dumps(info))
 
     def drop_request(self, flow_id):
         self.dropped[flow_id] += 1

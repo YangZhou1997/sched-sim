@@ -2,7 +2,7 @@ import sys
 
 import logging
 import random
-from request import Request
+from sim_request.sim_request import Request
 import numpy as np
 
 
